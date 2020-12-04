@@ -6,7 +6,8 @@ import {increment,decrement} from '../counter_redux/counter_action';
 
 
 let Counter = () => {
-    let count = useSelector(state => state.counter);
+    let count = useSelector((state) => state.counterKey.counter );
+    let name = useSelector((state) => state.counterKey.name);
     const dispatch = useDispatch();
     return (
         <React.Fragment>
@@ -16,6 +17,7 @@ let Counter = () => {
                             <h3> Counter App</h3>
                         </div>
                         <div className="card-body p-5 rounded">
+    <h4>{name}</h4> 
                             <h2 className="text-center" > {count}</h2>
                             <div className="d-flex justify-content-center">
                             <button className="btn btn-danger m-4 rounded" onClick={() =>  dispatch(decrement())}>-</button>

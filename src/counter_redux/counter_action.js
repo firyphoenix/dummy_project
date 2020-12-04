@@ -3,13 +3,15 @@ export const DECREMENT = "DECREMENT";
 
 let increment = () => {
     return {
-        type : INCREMENT
+        type : INCREMENT,
+        payload:"I am Increment"
     };
 }
 
 let decrement = () => {
     return {
-        type : DECREMENT
+        type : DECREMENT,
+        payload:"I am decrement"
     };
 }
 

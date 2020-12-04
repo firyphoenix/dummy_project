@@ -5,6 +5,7 @@ import { store } from './counter_redux/counter_store';
 import Header from './header';
 import {Provider} from 'react-redux';
 import Ideainputform from './ideainputform'
+import IdeaForm from './IdeaForm';
 
 import Mainpage from './mainpage';
 
